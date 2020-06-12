@@ -17889,93 +17889,68 @@ video {
   color: #e4a918;
 }
 
+.logo_yellow_back
+{
+  background-color: #e4a918;
+}
+
 .new
 {
   color: #e4a761;
 }
 
-.personalization1
+.myred
 {
-  color: #e4a918;
-  border: 1px solid;
-  /* added */
-  padding: 20px;
-  box-shadow: 5px 10px #888888;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 50%;
+  color: #db4437;
 }
 
-.p2
+.myblue
 {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 50%;
+  color: #4285f4;
 }
 
-.p3
+.myyellow
 {
-  border-radius: 2px;
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  color: #f4b400;
 }
 
-.p4
+.myyellow_back
 {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 4px;
+  background-color: #f4b400;
 }
 
-.p5
+.mygreen
 {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px;
+  color: #0f9d58;
 }
 
-.segment{
-  border-radius: 50px;
-  background: #497732;
-  box-shadow: inset 26px 26px 51px #2d4a5b, 
-            inset -26px -26px 51px #65a4c9;
+.mygreen_back
+{
+  background-color: #0f9d58;
+}
+
+.myback
+{
+  background-color: #4abdac;
+}
+
+.mywhite
+{
+  color: #ffffff;
+}
+
+.mywhite_back{
+  background-color: #ffffe4;
+}
+
+.myheader
+{
+  background-color:#ffffe4;
+  color: #4285f4;
+}
+
+.mySlides {
+  display:none;
 }
 
 @media (min-width: 640px) {

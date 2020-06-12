@@ -17,87 +17,58 @@
 {
     color: #e4a918;
 }
+.logo_yellow_back
+{
+   background-color: #e4a918;
+}
+
 .new
 {
     color: #e4a761;
 }
 
-.personalization1
-{
-    color: #e4a918;
-    border: 1px solid;
-    /* added */
-    padding: 20px;
-    box-shadow: 5px 10px #888888;
-    border: none;
-     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 50%;
 
+
+.myred
+{
+    color: #db4437;
+}
+.myblue
+{
+    color: #4285f4;
+}
+.myyellow
+{
+    color: #f4b400;
+}
+.myyellow_back
+{
+    background-color: #f4b400;
+}
+.mygreen
+{
+   color: #0f9d58;
+}
+.mygreen_back
+{
+   background-color: #0f9d58;
+}
+.myback
+{
+    background-color: #4abdac;
+}
+.mywhite
+{
+    color: #ffffff;
+}
+.mywhite_back{
+    background-color: #ffffe4;
 }
 
-.p2
+.myheader
 {
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-      
-         border-radius: 50%;
-}
-.p3
-{
-    border-radius: 2px;
-    background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
+    background-color:#ffffe4;
+    color: #4285f4;
 }
 
-.p4
-{
-    background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 4px;
-
-}
-.p5
-{
-background-color: #4CAF50; /* Green */
-border: none;
-color: white;
-padding: 20px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-margin: 4px 2px;
-cursor: pointer;
-border-radius: 12px;
-
-}
-
+.mySlides {display:none;}
