@@ -1,0 +1,103 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+/* personal customization */
+
+
+
+.logo_blue{
+    color: #143d59;
+}
+.logo_yellow
+{
+    color: #e4a918;
+}
+.new
+{
+    color: #e4a761;
+}
+
+.personalization1
+{
+    color: #e4a918;
+    border: 1px solid;
+    /* added */
+    padding: 20px;
+    box-shadow: 5px 10px #888888;
+    border: none;
+     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+.p2
+{
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      
+         border-radius: 50%;
+}
+.p3
+{
+    border-radius: 2px;
+    background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+}
+
+.p4
+{
+    background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+
+}
+.p5
+{
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 12px;
+
+}
+
