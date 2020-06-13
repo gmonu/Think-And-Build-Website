@@ -146,91 +146,142 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 
+ * {box-sizing:border-box}
+
+ /* Slideshow container */
+ .slideshow-container {
+   
+   max-width: 1000px;
+   position: relative;
+   margin: auto;
+ }
+ 
+ /* Hide the images by default */
+ .mySlides {
+   display: none;
+ }
+ 
+ /* Next & previous buttons */
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+ 
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+ 
+ /* Caption text */
+ .text {
+   color: #f2f2f2;
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+ }
+ 
+ /* Number text (1/3 etc) */
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+ 
+ /* The dots/bullets/indicators */
+ .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color:rgb(190, 42, 42);
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+ 
+ .active, .dot:hover {
+   background-color: #f4b400;
+ }
+ 
+ /* Fading animation */
+ .fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+ 
+ @-webkit-keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+ 
+ @keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 img {
   border-style: none;
-
-}
-.container {
-  position: relative;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
 /* Forms
    ========================================================================== */
 
@@ -552,113 +603,10 @@ hr {
  *
  * https://github.com/tailwindcss/tailwindcss/issues/362
  */
-/* 
+
 img {
-  border-style: solid; 
-  
+  border-style: solid;
 }
-
- */
-
- * {box-sizing:border-box}
-
- /* Slideshow container */
- .slideshow-container {
-   
-   max-width: 1000px;
-   position: relative;
-   margin: auto;
- }
- 
- /* Hide the images by default */
- .mySlides {
-   display: none;
- }
- 
- /* Next & previous buttons */
- .prev, .next {
-   cursor: pointer;
-   position: absolute;
-   top: 50%;
-   width: auto;
-   margin-top: -22px;
-   padding: 16px;
-   color: white;
-   font-weight: bold;
-   font-size: 18px;
-   transition: 0.6s ease;
-   border-radius: 0 3px 3px 0;
-   user-select: none;
- }
- 
- /* Position the "next button" to the right */
- .next {
-   right: 0;
-   border-radius: 3px 0 0 3px;
- }
- 
- /* On hover, add a black background color with a little bit see-through */
- .prev:hover, .next:hover {
-   background-color: rgba(0,0,0,0.8);
- }
- 
- /* Caption text */
- .text {
-   color: #f2f2f2;
-   font-size: 15px;
-   padding: 8px 12px;
-   position: absolute;
-   bottom: 8px;
-   width: 100%;
-   text-align: center;
- }
- 
- /* Number text (1/3 etc) */
- .numbertext {
-   color: #f2f2f2;
-   font-size: 12px;
-   padding: 8px 12px;
-   position: absolute;
-   top: 0;
- }
- 
- /* The dots/bullets/indicators */
- .dot {
-   cursor: pointer;
-   height: 15px;
-   width: 15px;
-   margin: 0 2px;
-   background-color: rgb(190, 42, 42);
-   border-radius: 50%;
-   display: inline-block;
-   transition: background-color 0.6s ease;
- }
- 
- .active, .dot:hover {
-   background-color: #f4b400;
- }
- 
- /* Fading animation */
- .fade {
-   -webkit-animation-name: fade;
-   -webkit-animation-duration: 1.5s;
-   animation-name: fade;
-   animation-duration: 1.5s;
- }
- 
- @-webkit-keyframes fade {
-   from {opacity: .4}
-   to {opacity: 1}
- }
- 
- @keyframes fade {
-   from {opacity: .4}
-   to {opacity: 1}
- }
-
-
-
-
 
 textarea {
   resize: vertical;
@@ -18097,6 +18045,10 @@ video {
 {
   color: #f4b400;
 }
+.my_red_back
+{
+  background-color: #db4437;
+}
 
 .myyellow_back
 {
@@ -18143,6 +18095,10 @@ video {
   background-color: #0f9d58;
 }
 
+.flexcolor
+{
+  background-color: #9ceef1;
+}
 
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
@@ -19736,7 +19692,7 @@ video {
     background-color: #667eea;
     background-color: rgba(102, 126, 234, var(--bg-opacity));
   }
-
+  
   .sm\:bg-indigo-600 {
     --bg-opacity: 1;
     background-color: #5a67d8;
