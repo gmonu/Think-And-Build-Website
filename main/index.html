@@ -63,91 +63,150 @@
       </div>
 
 
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-<<<<<<< HEAD
-<!--        
-        <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
-        -->
-        <!-- Container for the image gallery -->
-
-        <!-- Slideshow container -->
-<div class="slideshow-container">
+      
+<div class=" lg:max-w-lg lg:w-full md:w-1/2 w-5/6 slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="https://images.assettype.com/freepressjournal%2Fimport%2F2017%2F10%2FTom-Cruise.jpg?auto=format%2Ccompress&w=400&dpr=2.6" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="a.jpg" style="width:100%">
+          <!-- <div class="text">Capti on Text</div> -->
+        </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQh0SitYQWqhXv57r3j-Bo3ZvF_2GZXKaCamoH6WgHlbV0j1Ccw&usqp=CAU" style="width:100%">
-    <div class="text">Caption Two</div>
-  </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="b.jpg" style="width:100%">
+          <!-- <div class="text">Caption Two</div> -->
+        </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQVdeVRtBBak1tTP1ir1k4IKPt_g83A3Ly_mUy-Ahowr7vJCvQk&usqp=CAU" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="c.jpg" style="width:100%">
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-   
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     
+     <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+        
+    </div>
+  </div>  
+</section>
+
+
+
     
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>  
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-=======
-          <img class="object-cover object-center rounded" alt="hero" src="a.jpg">
-      
->>>>>>> 5b8808b5f73c8b573ddb8096a28af1757d747bc1
+<!-- content section -->
+<section class="text-gray-700  mywhite_back body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-20">
+      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
+        <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+      </div>
+      <p class="lg:w-1/2 w-full leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
+          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+        </div>
+      </div>
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content">
+          <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+        </div>
       </div>
     </div>
-</div>
+  </div>
+</section>
 
-</div>
+
+
+<!-- stats section -->
+<section class="text-gray-700  mywhite_back body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4 text-center">
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">2.7K</h2>
+        <p class="leading-relaxed">Users</p>
+      </div>
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">1.8K</h2>
+        <p class="leading-relaxed">Subscribes</p>
+      </div>
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">35</h2>
+        <p class="leading-relaxed">Downloads</p>
+      </div>
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">4</h2>
+        <p class="leading-relaxed">Products</p>
+      </div>
     </div>
-
-  </section>
+  </div>
+</section>
 
 <!-- Footer section -->
 <footer class="text-gray-700 body-font">

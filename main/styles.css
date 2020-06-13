@@ -554,7 +554,6 @@ hr {
  */
 /* 
 img {
-<<<<<<< HEAD
   border-style: solid; 
   
 }
@@ -629,14 +628,14 @@ img {
    height: 15px;
    width: 15px;
    margin: 0 2px;
-   background-color: #bbb;
+   background-color: rgb(190, 42, 42);
    border-radius: 50%;
    display: inline-block;
    transition: background-color 0.6s ease;
  }
  
  .active, .dot:hover {
-   background-color: #717171;
+   background-color: #f4b400;
  }
  
  /* Fading animation */
@@ -660,10 +659,6 @@ img {
 
 
 
-=======
-  border-style: solid;
-}
->>>>>>> 5b8808b5f73c8b573ddb8096a28af1757d747bc1
 
 textarea {
   resize: vertical;
