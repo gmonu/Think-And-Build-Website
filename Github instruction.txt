@@ -12,4 +12,10 @@ git push upstream master
 
 my contribution
 
+
+For contributing in others account's repo
+ 1. forked the repo.
+ 2. add what you want to change.
+ 3. give it a pull request.
+
  
